@@ -1,5 +1,7 @@
+body{width:90%;margin:auto;min-width:600px;max-width:2000px}
+
 .container {
-  height: 100vh;
+  /*height: 100vh;*/
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px minmax(200px, 1fr) 100px;
@@ -27,9 +29,11 @@ grid-row-start: 2;
 footer{
 grid-column-start: 1;
 grid-column-end: 4;
+
+position: absolute; 
+left: 0 ; right: 0; bottom: 0; 
+height:[footer-height] 
 }
-
-
 
 /* ===================================== 
    Page Styles
