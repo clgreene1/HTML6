@@ -1,4 +1,4 @@
-body{width:90%;margin:auto;min-width:600px;max-width:2000px}
+body{width:90%;margin:auto;min-width:300px;max-width:2000px}
 
 .container {
   /*height: 100vh;*/
@@ -28,7 +28,7 @@ grid-row-start: 2;
 }
 footer{
 grid-column-start: 1;
-grid-column-end: 4;
+grid-column-end: 5;
 
 position: absolute; 
 left: 0 ; right: 0; bottom: 0; 
