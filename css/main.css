@@ -1,128 +1,66 @@
-body{width:90%;margin:auto;min-width:100px;max-width:2000px}
-
-.container {
-  height: 100vh;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px minmax(50px, 1fr) 50px;
-  grid-gap: 10px;
+/*Ensure proper sizing */
+*{
+    box-sizing: border-box;
 }
-header {
- grid-column-start: 1;
- grid-column-end: 2;
-}
-nav{
- grid-column-start: 2;
- grid-column-end: 4; 
-}
-main {
- grid-row-start:2;
- grid-row-end: 3;
-}
-aside{
-    
-grid-column-start: 2;
-grid-column-end: 4;  
-grid-row-start: 2;
-  grid-row-end: 4;
-}
-footer{
-/*grid-column-start: 1;
-grid-column-end: 4;*/
-
-position: absolute; 
-left: 0 ; right: 0; bottom: 0; 
-height:[footer-height] 
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* ===================================== 
-   Page Styles
-======================================== */
-* {
-	box-sizing: border-box;
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 60%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 40%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
 }
 
 body {
-	font-size: 1.4em;
-	font-family: 'Varela Round', sans-serif;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-.container > * {
-  
-}
-
-
-header h1{
   font-family: cormorant-garamond, serif;
-    font-size: 35px;
-    color:#9F9F9F;
-    
-    text-align: left;
-    padding: 20px;
-    margin-left: 30px
-}
-
-
-nav {
-    text-align: right;
-    padding: 20px
+    font-size: 30px;
 }
 
     
-nav ul li{
-    display: inline;
-    font-family: cormorant-garamond, serif;
-    font-size: 35px;
-    color:#9F9F9F;
-    background-color: #fff;
-    
-}
 
-nav ul li a {
-    text-decoration: none;
-    color: #9F9F9F;
-    padding: 40px;
-    }
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: 333;
+}
 
 
 
-main {
-  font-family: cormorant-garamond, serif;
-    font-size: 35px;
-    color:#6c6c6c;
-    background-color: #fff;
-    text-align: center;
-    margin-top: 300px;
-    padding: 100px;
-   
+.navbar a {
+     float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: gray; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
 }
 
-aside {
-  background-color: #fff; 
-    margin-top: 25px;
-    padding: 100px 0px 0px 0px;
-    text-align:center;
-}
-footer {
-    font-family: cormorant-garamond, serif;
-    font-size: 30px; 
-    color: #000;
-    background-color: #BFBFBF;
-    text-align: center;
-   
-}
-  
-footer h3 {
-    text-align: left;
-    margin: 0px;
-    padding: 20px;
-    display: inline;
+.navbar a.right {
+    float: right;
 }
 
-footer img {
-  text-align: center;
-    display: inline;
-     padding: 20px
-}
+
+
+
+
+
+
+
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+
