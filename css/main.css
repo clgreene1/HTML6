@@ -13,7 +13,8 @@
 .side {
   flex: 50%; /* Set the width of the sidebar */
   background-color: #fff; /* Grey background color */
-  padding: 80px; /* Some padding */
+  padding: 200px 0px 0px 0px; /* Some padding */
+  margin: 0px;
    text-align: center;
     color:#9F9F9F;
 }
@@ -53,14 +54,6 @@ body {
 .navbar a.right {
     float: right;
 }
-
-
-
-
-
-
-
-
 
 .footer {
   padding: 20px; /* Some padding */
