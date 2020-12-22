@@ -2,6 +2,13 @@
 *{
     box-sizing: border-box;
 }
+
+/*html, body {
+  max-width: 1366px;
+  max-height: 768px;
+} */
+
+
 /* Column container */
 .row {
   display: flex;
@@ -55,8 +62,18 @@ body {
     float: right;
 }
 
-.footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
+/*.footer {
+  padding: 20px; /* Some padding 
+  text-align: center; /* Center text
+  background: #ddd; /* Grey background 
+}*/
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ddd;
+   color: white;
+   text-align: center;
+}
