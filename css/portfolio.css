@@ -1,0 +1,66 @@
+.container{
+margin: 0 auto;
+border: 1px solid red;
+align-items:flex-start;
+}
+
+div.gallery {
+  display:inline-block;
+  margin: 20px;
+  border: 1px solid blue;
+  height: 250px;
+  width: 200px;
+  padding: 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+    text-decoration: none;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+border: 1px solid red
+    
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+    border: 1px solid red
+}
+
+
+
+footer {
+    font-family: cormorant-garamond, serif;
+    font-size: 30px; 
+    color: #000;
+    background-color: #BFBFBF;
+    text-align: center;
+   
+}
+  
+footer h3 {
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+    display: inline;
+}
+
+footer img {
+  text-align: center;
+    display: inline;
+     padding: 20px
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #BFBFBF;
+   color: white;
+   text-align: center;
+}
